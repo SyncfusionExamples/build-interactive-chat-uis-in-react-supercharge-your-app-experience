@@ -129,7 +129,7 @@ function App() {
               </div>             
             </div>
             <div id="integration-chat">
-              <ChatUIComponent id="integration-chat" style={{ border: 'none' }} ref={chatUiInst} headerText="Albert" headerIconCss="chat_user1_avatar" messages={messages} user={{ id: 'user1', user: 'Albert', avatarUrl: 'https://ej2.syncfusion.com/react/demos/src/chat-ui/images/andrew.png' }} headerToolbar={userToolbarSettings} messageSend={(args) => { handleMessageSend(args); }}/>
+              <ChatUIComponent id="integration-chat" showTimeBreak={true} typingUsers={typingUsers} timeBreakTemplate={timeBreakTemplate} style={{ border: 'none' }} ref={chatUiInst} headerText="Albert" headerIconCss="chat_user1_avatar" messages={messages} user={{ id: 'user1', user: 'Albert', avatarUrl: 'https://ej2.syncfusion.com/react/demos/src/chat-ui/images/andrew.png' }} headerToolbar={userToolbarSettings} messageSend={(args) => { handleMessageSend(args); }}/>
             </div>
           </SplitterComponent>
         </div>
